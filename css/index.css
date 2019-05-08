@@ -205,10 +205,16 @@ header .droom-logo .logo {
 header .droom-logo .cloud {
   height: 6rem;
 }
-.homepage {
+.home-page {
   max-width: 1600px;
   width: 100%;
 }
-.homepage .intro {
+.home-page .sign-up {
+  width: 40%;
+  margin: 10rem;
+  padding: 3rem;
+  border: 2px solid #0741A6;
+}
+.home-page .intro {
   height: 30rem;
 }
