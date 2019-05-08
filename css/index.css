@@ -182,6 +182,9 @@ header a {
   text-decoration: none;
   font-size: 1.7rem;
 }
+header a:hover {
+  color: white;
+}
 header .droom-logo {
   flex-direction: row;
   margin: 0 0 1.4rem 3rem;
@@ -205,4 +208,7 @@ header .droom-logo .cloud {
 .homepage {
   max-width: 1600px;
   width: 100%;
+}
+.homepage .intro {
+  height: 30rem;
 }
