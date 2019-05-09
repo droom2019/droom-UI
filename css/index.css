@@ -214,6 +214,20 @@ header .droom-logo .cloud {
   margin: 10rem;
   padding: 3rem;
   border: 2px solid #0741A6;
+  border-radius: 20px;
+}
+.home-page h2 {
+  padding: 2rem 5rem;
+}
+.home-page p {
+  margin-left: 10rem;
+}
+.home-page input {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid #E0DCDC;
+  border-radius: 5px;
+  margin: 2rem 3rem;
 }
 .home-page .intro {
   height: 30rem;
