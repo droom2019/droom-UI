@@ -1,1 +1,36 @@
-// Mixins
+.home-page {
+	.sign-up {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		height: 60rem;
+		margin: 0 0 0 4rem;
+		// border-radius: 20px;
+	}
+	
+	.sign-up-heading {
+		margin: 3rem 0 0rem 5rem;
+		padding: 3rem;
+	}
+
+	.register {
+		display: flex;
+		flex-direction: row;
+		margin: 0 5rem 3rem 2rem;
+		
+		input {
+			width: 70%;
+			margin: 0 4rem 0 ;
+			padding: 1rem;
+			border: 1px solid @nav-font;
+			border-radius: 5px;
+		}
+
+		button{
+			width: 40%;
+			padding: 1.2rem;
+			border: 1px solid lightgray;
+			border-radius: 5px; 
+		}
+	}
+}

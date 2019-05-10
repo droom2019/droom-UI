@@ -1,46 +1,51 @@
 body {
 	background-image: url(../images/background1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .home-page {
-	max-width: 1600px;
-	width: 100%;
 
-	.sign-up {
-		width: 40%;
-		margin: 10rem;
-		padding: 3rem;
-		border: 2px solid @main-color;
-		border-radius: 20px;
+	.top-content {
+		display: flex;
+
+		.sign-up-employee {
+			margin-top: 20rem;
+			height: 55rem;
+			color: white;
+			background-color: rgba(6, 6, 83, 0.836);
+			border: 2px solid @accent-color;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+
+		.sign-up-employer {
+			height: 55rem;
+			color: white;
+			background-color: rgba(156, 156, 160, 0.616);
+			border: 2px solid @accent-color;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+
 	}
+}
 
-		h2 {
-			padding: 2rem 5rem;
-		}
+.intro {
+	margin: 30rem 3rem 0 0;
+	height: 30rem;
+	color: rgb(66, 66, 66);
+	width: 40%;
 
-		p {
-			margin-left: 10rem;
-		}
-
-		input {
-			width: 80%;
-			padding: 1rem;
-			border: 1px solid @nav-font;
-			border-radius: 5px;
-			margin: 2rem 3rem;
-		}
-
-	.sign-in {
-		display:flex;
-		margin: 2rem 0 0 0;
-
-		a {
-			margin: 0.6rem 0 0 2rem;
-			font-size: 1.4rem;
-			color: @accent-color;
-		}
+	p{
+		font-size: 4rem;
+		color: silver;
 	}
-	
-	.intro {
-		height: 30rem;
+}
+
+.home-page{
+
+	.img {
+		height: 100px;
+		width: 100px;
 	}
 }
