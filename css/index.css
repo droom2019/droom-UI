@@ -200,12 +200,24 @@ header {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header {
+    height: 25rem;
+  }
+}
 header nav {
   width: 60%;
   height: 3rem;
   margin-top: 3.3rem;
   margin-left: 70rem;
   font-weight: lighter;
+}
+@media (max-width: 500px) {
+  header nav {
+    margin: 12rem 10rem 10rem 0;
+    height: 20rem;
+    width: 100%;
+  }
 }
 header a {
   margin: 0 4rem 0 0;
@@ -216,15 +228,31 @@ header a {
 header a:hover {
   color: white;
 }
+@media (max-width: 500px) {
+  header a:hover {
+    width: 100%;
+  }
+}
 header .droom-logo {
   flex-direction: row;
   margin: 0 0 1.4rem 3rem;
   width: 30%;
   height: 6rem;
 }
+@media (max-width: 500px) {
+  header .droom-logo {
+    margin: 2rem 0 0 10rem;
+  }
+}
 header .droom-logo .logo-pic {
   width: 30%;
   margin: 0;
+}
+@media (max-width: 500px) {
+  header .droom-logo .logo-pic {
+    margin: 0;
+    width: 40%;
+  }
 }
 header .droom-logo .logo {
   position: relative;
@@ -285,12 +313,12 @@ body {
 .intro {
   margin: 30rem 3rem 0 0;
   height: 30rem;
-  color: #424242;
   width: 40%;
 }
 .intro p {
   font-size: 4rem;
-  color: silver;
+  font-weight: bolder;
+  color: #4E4B4B;
 }
 .home-page .img {
   height: 100px;

@@ -8,12 +8,22 @@ header {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	
+	@media @phone {
+		height: 25rem;
+	}
+
 	nav {
     width: 60%;
     height: 3rem;
 		margin-top: 3.3rem;
 		margin-left: 70rem;
 		font-weight: lighter;
+
+		@media @phone {
+			margin: 12rem 10rem 10rem 0;
+			height: 20rem;
+			width: 100%;
+		}
 	}
 	
 	a	{
@@ -23,6 +33,10 @@ header {
 		font-size: 1.7rem;
 		&:hover {
 			color: white;
+
+			@media @phone {
+				width: 100%;
+			}
 		}
 	}
 	
@@ -32,9 +46,18 @@ header {
 		width: 30%;
 		height: 6rem;
 
+		@media @phone {
+			margin: 2rem 0 0 10rem;
+		}
+
 		.logo-pic{
 			width: 30%;
 			margin: 0;
+
+			@media @phone {
+				margin: 0;
+				width: 40%;
+			}
 		}
 		
 		.logo {
