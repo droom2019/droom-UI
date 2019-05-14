@@ -173,7 +173,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    height: 25rem;
+    height: 30rem;
   }
 }
 header nav {
@@ -201,8 +201,10 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   header nav a {
-    width: 60%;
-    color: lime;
+    width: 100%;
+    font-size: 2.5rem;
+    border-top: 1px solid #89919F;
+    color: #89919F;
   }
 }
 header .droom-logo {
@@ -214,6 +216,7 @@ header .droom-logo {
 @media (max-width: 500px) {
   header .droom-logo {
     margin: 2rem 0 0 10rem;
+    width: 100%;
   }
 }
 header .droom-logo .logo-pic {
@@ -270,7 +273,12 @@ body {
 }
 .home-page .top-content {
   display: flex;
-  height: 800px;
+  height: 600px;
+}
+@media (max-width: 500px) {
+  .home-page .top-content {
+    flex-direction: column-reverse;
+  }
 }
 .home-page .top-content .sign-up {
   height: 20rem;
@@ -281,12 +289,23 @@ body {
   background-color: rgba(225, 225, 232, 0.7);
   color: white;
 }
+@media (max-width: 500px) {
+  .home-page .top-content .sign-up {
+    width: 100%;
+    margin: 3rem 0 0 0;
+  }
+}
 .home-page .top-content .sign-up input {
   width: 62%;
   margin: 3rem 4.5rem 0 3rem;
   padding: 1.3rem;
   border: 1px solid #E0DCDC;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home-page .top-content .sign-up input {
+    width: 80%;
+  }
 }
 .home-page .top-content .sign-up button {
   width: 20%;
@@ -300,6 +319,11 @@ body {
   color: #89919F;
   border: 1px solid #E1E1E8;
 }
+@media (max-width: 500px) {
+  .home-page .top-content .sign-up button {
+    margin: 2rem 0 0 13rem;
+  }
+}
 .home-page .top-content .intro {
   margin: 20rem 0 0 6rem;
   height: 30rem;
@@ -307,11 +331,32 @@ body {
 }
 @media (max-width: 500px) {
   .home-page .top-content .intro {
-    display: none;
+    margin: 37rem 0 3rem 1rem;
+    height: 100%;
+    width: 90%;
   }
 }
 .home-page .top-content .intro p {
   font-size: 3.5rem;
   font-weight: bolder;
   color: #E0DCDC;
+}
+@media (max-width: 500px) {
+  .home-page .top-content .intro p {
+    font-size: 2rem;
+  }
+}
+.home-page .bottom-content .bottom-info {
+  width: 100%;
+  display: flex;
+  background: white;
+}
+.home-page .bottom-content .bottom-info .img {
+  width: 200px;
+  height: 200px;
+  width: 16%;
+  margin: 10rem 10rem 10rem 13rem;
+}
+.home-page .bottom-content .bottom-info .img2 p {
+  margin-top: 5rem;
 }

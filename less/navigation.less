@@ -9,7 +9,7 @@ header {
 	justify-content: space-between;
 	
 	@media @phone {
-		height: 25rem;
+		height: 30rem;
 	}
 
 	nav {
@@ -35,9 +35,10 @@ header {
 				}
 				
 				@media @phone {
-					width: 60%;
-					// margin: 0 0 16rem 0;
-					color: lime;
+					width: 100%;
+					font-size: 2.5rem;
+					border-top: 1px solid @accent-color;
+					color: @accent-color;
 				}
 		}
 	}
@@ -51,6 +52,7 @@ header {
 
 		@media @phone {
 			margin: 2rem 0 0 10rem;
+			width: 100%;
 		}
 
 		.logo-pic{
