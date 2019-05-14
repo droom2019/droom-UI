@@ -240,11 +240,14 @@ header .droom-logo .cloud {
   height: 6rem;
 }
 footer {
-  width: 100%;
-  height: 6rem;
-  margin: 20rem 0 0 0;
-  color: white;
-  background: #000000;
+  width: 70%;
+  height: 8rem;
+  width: 90%;
+  margin: 0 auto;
+  color: #89919F;
+  background-color: rgba(236, 236, 240, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -253,12 +256,13 @@ footer nav {
   justify-content: space-evenly;
 }
 footer a {
-  color: white;
-  font-size: 1.35em;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5em;
   text-decoration: none;
+  color: #89919F;
 }
 footer p {
-  margin: 1.2rem 0 0 55rem;
+  margin: 0 auto;
 }
 body {
   background: #22c1c3;
@@ -266,7 +270,7 @@ body {
 }
 .home-page .top-content {
   display: flex;
-  height: 600px;
+  height: 800px;
 }
 .home-page .top-content .sign-up {
   height: 20rem;
