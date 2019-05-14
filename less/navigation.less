@@ -1,7 +1,7 @@
 header {
 	width: 100%;
 	height: 7rem;
-	background-color: rgba(18, 18, 99,0.9);
+	background-color: rgba(236, 236, 240, 0.9);
 	position: fixed;
 	top: 0;
 	display: flex;
@@ -16,7 +16,7 @@ header {
     width: 60%;
     height: 3rem;
 		margin-top: 3.3rem;
-		margin-left: 70rem;
+		margin-left: 60rem;
 		font-weight: lighter;
 
 		@media @phone {
@@ -24,21 +24,24 @@ header {
 			height: 20rem;
 			width: 100%;
 		}
-	}
-	
-	a	{
-		margin: 0 4rem 0 0;
-		color: @nav-font;
-		text-decoration: none;
-		font-size: 1.7rem;
-		&:hover {
-			color: white;
-
-			@media @phone {
-				width: 100%;
-			}
+		
+		a	{
+			margin: 0 4rem 0 0;
+			color: @accent-color;
+			text-decoration: none;
+			font-size: 1.7rem;
+				&:hover {
+					color: white;
+				}
+				
+				@media @phone {
+					width: 60%;
+					// margin: 0 0 16rem 0;
+					color: lime;
+				}
 		}
 	}
+	
 	
 	.droom-logo {
 		flex-direction: row;
@@ -64,8 +67,11 @@ header {
 			position: relative;
 			left: 70px;
 			bottom: 45px;
-			color: @nav-font;
-			width: 20%;
+			width: 50;
+			font-size: 50px;
+			background: -webkit-linear-gradient(#eee, #333);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 		
 		.cloud {

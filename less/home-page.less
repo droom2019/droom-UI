@@ -1,55 +1,63 @@
 body {
-	background-image: url(../images/background1.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,154,253,0.7263947815454307) 70%);
 }
+
 .home-page {
 
 	.top-content {
 		display: flex;
+		height: 600px;
+		// @media @phone{
+		// 	margin-top: 25rem;
+		// 	width: 100%;
+		// }
 
-		.sign-up-employee {
-			margin-top: 20rem;
-			height: 55rem;
+		.sign-up{
+			height: 20rem;
+			margin: 20rem 3rem 0 5rem;
+			border: 1px solid @cray-gray;
+			border-radius: 20px;
+			padding: 4rem 3rem;
+			background-color: rgba(225, 225, 232, 0.7);
 			color: white;
-			background-color: rgba(6, 6, 83, 0.836);
-			border: 2px solid @accent-color;
-			border-top-right-radius: 20px;
-			border-top-left-radius: 20px;
+
+			input {
+				width: 62%;
+				margin: 3rem 4.5rem 0 3rem;
+				padding: 1.3rem;
+				border: 1px solid @nav-font;
+				border-radius: 5px;
+			}
+	
+			button{
+				width: 20%;
+				padding: 1.2rem;
+				border: 1px solid lightgray;
+				color: @accent-color;
+				border-radius: 5px; 
+				&:hover{
+					background-color: @cray-gray;
+					color: @accent-color;
+					border: 1px solid @cray-gray;
+				}
+			}
 		}
+					
 
-		.sign-up-employer {
-			height: 55rem;
-			color: white;
-			background-color: rgba(156, 156, 160, 0.616);
-			border: 2px solid @accent-color;
-			border-bottom-left-radius: 20px;
-			border-bottom-right-radius: 20px;
-
-			// @media @phone {
-
-			// }
+		.intro {
+			margin: 20rem 0 0 6rem;
+			height: 30rem;
+			width: 40%;
+			@media @phone{
+				display: none;
+			}
+	
+			p{
+				font-size: 3.5rem;
+				font-weight: bolder;
+				color: @bon-jour;
+			}
 		}
-
-	}
-}
-
-.intro {
-	margin: 30rem 3rem 0 0;
-	height: 30rem;
-	width: 40%;
-
-	p{
-		font-size: 4rem;
-		font-weight: bolder;
-		color: #4E4B4B;
-	}
-}
-
-.home-page{
-
-	.img {
-		height: 100px;
-		width: 100px;
 	}
 }
