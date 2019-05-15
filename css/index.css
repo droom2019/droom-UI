@@ -424,3 +424,20 @@ footer p {
   margin: 0 15rem 0 0;
   text-align: center;
 }
+.about-page .testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 30rem 0;
+}
+.about-page .testimonial .user {
+  height: 150px;
+  width: 150px;
+  color: white;
+}
+.about-page .testimonial .user .test {
+  border-radius: 50%;
+}
+.about-page .testimonial .user h6 {
+  font-weight: bold;
+  font-size: 2rem;
+}
