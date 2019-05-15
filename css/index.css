@@ -161,6 +161,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, rgba(45, 154, 253, 0.72639478) 70%);
+}
 header {
   width: 100%;
   height: 7rem;
@@ -272,10 +276,6 @@ footer a {
 }
 footer p {
   margin: 0 auto;
-}
-body {
-  background: #22c1c3;
-  background: linear-gradient(0deg, #22c1c3 0%, rgba(45, 154, 253, 0.72639478) 70%);
 }
 .home-page .top-content {
   display: flex;
@@ -394,4 +394,23 @@ body {
 }
 .home-page .bottom-content .bottom-info .img2 p {
   margin-top: 5rem;
+}
+.about-page .content-heading {
+  display: flex;
+}
+.about-page .content-heading .chef {
+  height: 500px;
+  width: 549px;
+}
+.about-page .content-heading .dentist {
+  height: 200px;
+  width: 244px;
+}
+.about-page .content-heading .auto-tech {
+  height: 600px;
+  width: 550px;
+}
+.about-page .content-heading .photographer {
+  height: 300px;
+  width: 244px;
 }
