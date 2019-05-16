@@ -399,6 +399,11 @@ footer p {
   display: flex;
   height: 35rem;
 }
+@media (max-width: 500px) {
+  .about-page .content-heading {
+    flex-direction: column;
+  }
+}
 .about-page .content-heading .chef {
   height: 500px;
   width: 549px;
@@ -406,6 +411,11 @@ footer p {
 .about-page .content-heading .dentist {
   height: 200px;
   width: 244px;
+}
+@media (max-width: 500px) {
+  .about-page .content-heading .dentist {
+    display: none;
+  }
 }
 .about-page .content-heading .auto-tech {
   height: 600px;
@@ -415,29 +425,92 @@ footer p {
   height: 300px;
   width: 244px;
 }
-.about-page .top-content {
+@media (max-width: 500px) {
+  .about-page .content-heading .photographer {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about-page .content {
+    margin: 117rem 0 0 0;
+    padding: 1rem 0 0 0;
+  }
+}
+.about-page .content .top-content {
   margin: 10rem 0 0 15rem;
   color: #E1E1E8;
 }
-.about-page .top-content p {
+@media (max-width: 500px) {
+  .about-page .content .top-content {
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+.about-page .content .top-content p {
   line-height: 5rem;
   margin: 0 15rem 0 0;
   text-align: center;
 }
-.about-page .testimonial {
+@media (max-width: 500px) {
+  .about-page .content .top-content p {
+    margin: 0 5rem 0 0;
+    padding: 0 0 0 4rem;
+    text-align: left;
+  }
+}
+.about-page .content .testimonial {
+  width: 100%;
+  height: 60rem;
   display: flex;
   justify-content: space-evenly;
-  margin: 0 0 30rem 0;
+  margin: 10rem 0 6rem 0;
+  background: white;
 }
-.about-page .testimonial .user {
-  height: 150px;
-  width: 150px;
-  color: white;
+@media (max-width: 500px) {
+  .about-page .content .testimonial {
+    height: 90rem;
+    flex-direction: column;
+  }
 }
-.about-page .testimonial .user .test {
-  border-radius: 50%;
+.about-page .content .testimonial .user {
+  height: 24rem;
+  width: 24rem;
+  color: #89919F;
 }
-.about-page .testimonial .user h6 {
+@media (max-width: 500px) {
+  .about-page .content .testimonial .user {
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+  }
+}
+.about-page .content .testimonial .user .test {
+  margin: 5rem 0 3rem 0;
+  height: 19rem;
+  max-width: 79%;
+  border-radius: 17%;
+}
+@media (max-width: 500px) {
+  .about-page .content .testimonial .user .test {
+    margin: 0 2rem;
+  }
+}
+.about-page .content .testimonial .user p {
+  line-height: 2.6rem;
+}
+.about-page .content .testimonial .user h5 {
   font-weight: bold;
   font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+@media (max-width: 500px) {
+  .about-page .content .testimonial .user h5 {
+    margin: 1rem 0 0 8rem;
+  }
+}
+.about-page .content .testimonial .user h6 {
+  margin: 1rem 0 2rem 11rem;
+  font-size: 1.7rem;
+  color: #54D7EB;
 }

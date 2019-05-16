@@ -2,6 +2,9 @@
   .content-heading {
 		display: flex;
 		height: 35rem;
+		@media @phone{
+			flex-direction: column;
+		}
 
 		.chef {
 			height: 500px;
@@ -11,6 +14,9 @@
 		.dentist {
 			height: 200px;
 			width: 244px;
+			@media @phone{
+				display: none;
+			}
 		}
 
 		.auto-tech {
@@ -21,37 +27,91 @@
 		.photographer {
 			height: 300px;
 			width: 244px;
-		}
-	}
-
-	.top-content {
-		margin: 10rem 0 0 15rem;
-		color: @secondary-color;
-		
-		p{
-			line-height: 5rem;
-			margin: 0 15rem 0 0;
-			text-align: center;
-		}
-	}
-
-	.testimonial {
-		display: flex;
-		justify-content: space-evenly;
-		margin: 0 0 30rem 0;
-		.user {
-			height: 150px;
-			width: 150px;
-			color: white;
-	
-			.test {
-				border-radius: 50%;
+			@media @phone{
+				width: 100%;
 			}
+		}
+	}
 
-			h6{
-				font-weight: bold;
-				font-size: 2rem;
+	.content{
+		@media @phone{
+			margin: 117rem 0 0 0;
+			padding: 1rem 0 0 0;
+		}
+
+		.top-content {
+			margin: 10rem 0 0 15rem;
+			color: @secondary-color;
+			@media @phone {
+				width: 100%;
+				margin: 0;
+				font-size: 1rem;
+			}
+	
+			p{
+				line-height: 5rem;
+				margin: 0 15rem 0 0;
+				text-align: center;
+				@media @phone{
+					margin: 0 5rem 0 0;
+					padding: 0 0 0 4rem;
+					text-align: left;
+				}
+			}
+		}
+	
+		.testimonial {
+			width: 100%;
+			height: 60rem;
+			display: flex;
+			justify-content: space-evenly;
+			margin: 10rem 0 6rem 0;
+			background: white;
+			@media @phone{
+				height: 90rem;
+				flex-direction: column;
+			}
+	
+			.user {
+				height: 24rem;
+				width: 24rem;
+				color: @accent-color;
+				@media @phone{
+					margin-bottom: 2rem;
+					display: flex;
+					width: 100%;
+				}
+		
+				.test {
+					margin: 5rem 0 3rem 0;
+					height: 19rem;
+					max-width: 79%;
+					border-radius: 17%;
+					@media @phone{
+						margin: 0 2rem;
+					}
+				}
+	
+				p{
+					line-height: 2.6rem;
+				}
+				
+				h5{
+					font-weight: bold;
+					font-size: 2rem;
+					margin: 2rem 0 1rem 0;
+					@media @phone{
+						margin: 1rem 0 0 8rem;
+					}
+				}
+
+				h6{
+					margin: 1rem 0 2rem 11rem;
+					font-size: 1.7rem;
+					color: #54D7EB;
+				}
 			}
 		}
 	}
 }
+
