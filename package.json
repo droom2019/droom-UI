@@ -1,0 +1,24 @@
+{
+  "name": "droom-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droom2019/droom-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://brit-starks.github.io/droom-UI",
+  "bugs": {
+    "url": "https://github.com/droom2019/droom-UI/issues"
+  },
+  "homepage": "https://github.com/droom2019/droom-UI#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
